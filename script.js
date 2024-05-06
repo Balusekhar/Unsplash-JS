@@ -9,6 +9,8 @@ let url = "https://api.unsplash.com/search/photos?";
 let query = undefined;
 
 searchButton.addEventListener("click", async function(){
+    searchResultsDiv.innerHTML = "";
+
     query = searchInput.value;
 
     let response = await fetch(`${url}client_id=${client_id}&query=${query}`);
