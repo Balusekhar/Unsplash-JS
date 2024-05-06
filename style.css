@@ -63,21 +63,21 @@ body, html {
     padding: 20px;
 }
 
-#search-results-img {
+.search-results-img {
     max-width: 100%;
-    height: auto;
-    aspect-ratio: 16/9;
+    width: 400px;
+    height: 300px;
     object-fit: cover;
     object-position: center;
     cursor: pointer;
-    height: auto;
     border-radius: 4px; 
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
+
 @media (min-width: 500px) {
     .search-results img {
-        width: calc(50% - 10px); 
+        width: calc(50% - 10px); /* two images per row at minimum 500px screen width */
     }
 }
 
